@@ -21,4 +21,7 @@ fn main() {
     let st6 = &st5[0..6];
     println!("String length : {} and the string {}", st6.len(), st6);
     st5.clear();
+    let st6 = String::from("Just some");
+    let st7 = String::from("Words");
+    let st8 = st6 + &st7; // it means that the st6 is deleted and stored in st8 whereas string 7 still exists
 }
