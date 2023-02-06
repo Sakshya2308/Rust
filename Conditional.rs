@@ -15,3 +15,12 @@ fn main() {
         _ => println!("Not an important Birthday"),
     };
 }
+
+//By using ordering
+let my_age = 18;
+    let voting_age = 18;
+    match my_age.cmp(&voting_age) {
+        Ordering::Less => println!("can't vote"),
+        Ordering::Greater => println!("Can vote"),
+        Ordering::Equal => println!("You just gained voting right"),
+    };
